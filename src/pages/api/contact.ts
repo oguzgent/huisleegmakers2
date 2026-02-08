@@ -232,7 +232,7 @@ function buildConfirmationEmail(naam: string, type: string, locatie: string): st
           <tr><td style="padding:3px 0;font-size:13px;color:#64748b;"><span style="color:#1e40af;font-weight:600;">&#9742;</span>&nbsp;&nbsp;<a href="tel:+32478225633" style="color:#1e293b;text-decoration:none;font-weight:500;">0478 22 56 33</a></td></tr>
           <tr><td style="padding:3px 0;font-size:13px;color:#64748b;"><span style="color:#1e40af;font-weight:600;">&#9993;</span>&nbsp;&nbsp;<a href="mailto:info@huisleegmakers.gent" style="color:#1e293b;text-decoration:none;font-weight:500;">info@huisleegmakers.gent</a></td></tr>
           <tr><td style="padding:3px 0;font-size:13px;color:#64748b;"><span style="color:#1e40af;font-weight:600;">&#9679;</span>&nbsp;&nbsp;<span style="color:#64748b;">Pinksterbloemstraat 3, 9030 Gent</span></td></tr>
-          <tr><td style="padding:3px 0;font-size:13px;color:#64748b;"><span style="color:#1e40af;font-weight:600;">&#9679;</span>&nbsp;&nbsp;<a href="https://huisleegmakers.gent" style="color:#1e40af;text-decoration:none;font-weight:600;">huisleegmakers.gent</a></td></tr>
+          <tr><td style="padding:3px 0;font-size:13px;color:#64748b;"><span style="color:#1e40af;font-weight:600;">&#9679;</span>&nbsp;&nbsp;<a href="https://www.huisleegmakers.gent" style="color:#1e40af;text-decoration:none;font-weight:600;">huisleegmakers.gent</a></td></tr>
         </table>
       </td>
     </tr></table>

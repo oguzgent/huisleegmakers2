@@ -24,7 +24,7 @@ if (!loc) {
   return Astro.redirect('/404');
 }
 
-const siteUrl = 'https://huisleegmakers.gent';
+const siteUrl = 'https://www.huisleegmakers.gent';
 
 const werkwijze = [
   { nr: '1', titel: 'Contact & Afspraak', beschrijving: `Bel, mail of vul het formulier in. Binnen 24 uur plannen wij een gratis bezichtiging in ${loc.naam}.`, color: 'bg-brand-600' },
@@ -433,7 +433,7 @@ const andereLocaties = locaties.filter(l => l.slug !== loc.slug);
   "@type": "LocalBusiness",
   "name": "Huisleegmakers",
   "description": `Professionele woningontruiming in ${loc.naam}. Respectvolle begeleiding, spoedservice en bezemschone oplevering.`,
-  "url": `https://huisleegmakers.gent/woningontruiming-${loc.slug}`,
+  "url": `https://www.huisleegmakers.gent/woningontruiming-${loc.slug}`,
   "telephone": "+32478225633",
   "email": "info@huisleegmakers.gent",
   "address": {
@@ -467,8 +467,8 @@ const andereLocaties = locaties.filter(l => l.slug !== loc.slug);
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://huisleegmakers.gent" },
-    { "@type": "ListItem", "position": 2, "name": `Woningontruiming ${loc.naam}`, "item": `https://huisleegmakers.gent/woningontruiming-${loc.slug}` }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.huisleegmakers.gent" },
+    { "@type": "ListItem", "position": 2, "name": `Woningontruiming ${loc.naam}`, "item": `https://www.huisleegmakers.gent/woningontruiming-${loc.slug}` }
   ]
 })} />
 
