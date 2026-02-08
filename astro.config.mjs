@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://huisleegmakers.gent',
+  site: 'https://www.huisleegmakers.gent',
   output: 'static',
   adapter: vercel(),
   integrations: [
@@ -14,7 +14,7 @@ export default defineConfig({
       lastmod: new Date(),
       serialize(item) {
         // Homepage: hoogste prioriteit
-        if (item.url === 'https://huisleegmakers.gent/') {
+        if (item.url === 'https://www.huisleegmakers.gent/') {
           item.priority = 1.0;
           item.changefreq = 'weekly';
         }
