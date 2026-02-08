@@ -1,0 +1,35 @@
+---
+import { locaties } from '../data/locaties';
+---
+
+<section id="werkgebied" class="py-16 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold text-brand-600 uppercase tracking-widest mb-3">Werkgebied</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight font-display">Actief in Gent en omstreken</h2>
+      <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Vanuit onze vestiging in Mariakerke bedienen wij heel de regio Gent. Klik op uw gemeente voor meer informatie.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+      {locaties.map((locatie) => (
+        <a
+          href={`/woningontruiming-${locatie.slug}/`}
+          class="group bg-gray-50 hover:bg-brand-50 rounded-xl p-4 border border-gray-100 hover:border-brand-200 transition-all duration-200"
+        >
+          <p class="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors text-[15px]">{locatie.naam}</p>
+          <p class="text-sm text-gray-400 mt-1">{locatie.afstand} &middot; {locatie.reistijd}</p>
+          <div class="flex items-center mt-2 text-brand-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <span class="text-xs font-medium">Bekijk</span>
+            <svg class="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <p class="text-center text-sm text-gray-400 mt-8">
+      Niet in de lijst? Wij bedienen heel de regio Gent. <a href="#contact" class="text-brand-600 hover:text-brand-700 underline underline-offset-2">Neem contact op</a>.
+    </p>
+  </div>
+</section>
