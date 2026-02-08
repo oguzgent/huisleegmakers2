@@ -46,7 +46,7 @@ export const locaties: Locatie[] = [
     intro: 'Huisleegmakers is gevestigd in Mariakerke! Wij zijn letterlijk uw buur. Voor een woningontruiming in Mariakerke bent u bij ons aan het juiste adres. Snelle service, korte lijnen en altijd bezemschoon opgeleverd.',
     metaTitle: 'Woningontruiming Mariakerke | Huisleegmakers - Uw Lokale Partner',
     metaDescription: 'Woningontruiming in Mariakerke? Huisleegmakers is gevestigd in Mariakerke! Snelste service, gratis bezichtiging, bezemschoon. Bel 0478 22 56 33.',
-    heroAlt: 'Mariakerke Gent - thuisbasis van Huisleegmakers woningontruiming',
+    heroAlt: 'Voormalig gemeentehuis van Mariakerke (Kasteel Van Tieghem de ten Berghe) - woningontruiming door Huisleegmakers',
   },
   {
     slug: 'ledeberg',
