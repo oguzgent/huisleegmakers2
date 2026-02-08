@@ -10,8 +10,10 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     // CSRF: check Origin/Referer header
     const origin = request.headers.get('origin') || request.headers.get('referer') || '';
-    const allowedOrigins = ['https://huisleegmakers.gent', 'https://huisleegmakers2.vercel.app', 'https://huisleegmakers-kohl.vercel.app', 'http://localhost:4321', 'http://localhost:4322'];
-    const isAllowed = allowedOrigins.some(o => origin.startsWith(o));
+    const allowedOrigins = ['https://huisleegmakers.gent', 'https://huisleegmakers2.vercel.app', 'https://huisleegmakers-kohl.vercel.app', 'https://huisleegmakers-nasgents-projects.vercel.app', 'http://localhost:4321', 'http://localhost:4322'];
+    // Ook Vercel preview URLs toestaan (unieke hashes per deployment)
+    const isVercelPreview = origin.includes('-nasgents-projects.vercel.app');
+    const isAllowed = allowedOrigins.some(o => origin.startsWith(o)) || isVercelPreview;
     if (!isAllowed) {
       return new Response(JSON.stringify({ error: 'Ongeldig verzoek.' }), { status: 403 });
     }
