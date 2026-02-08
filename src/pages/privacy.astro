@@ -9,9 +9,26 @@ import Footer from '../components/Footer.astro';
   description="Privacyverklaring van Huisleegmakers. Lees hoe wij omgaan met uw persoonsgegevens conform de GDPR/AVG wetgeving."
   canonical="https://huisleegmakers.gent/privacy"
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://huisleegmakers.gent/" },
+      { "@type": "ListItem", "position": 2, "name": "Privacyverklaring", "item": "https://huisleegmakers.gent/privacy" }
+    ]
+  })} />
   <Header />
   <main id="main" class="pt-24 pb-20">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="text-sm text-gray-400 mb-6">
+        <ol class="flex items-center gap-1.5">
+          <li><a href="/" class="hover:text-brand-600 transition-colors">Home</a></li>
+          <li aria-hidden="true"><svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+          <li class="text-gray-700 font-medium" aria-current="page">Privacyverklaring</li>
+        </ol>
+      </nav>
+
       <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 tracking-tight">Privacyverklaring</h1>
       <p class="text-sm text-slate-400 mb-10">Laatst bijgewerkt: februari 2025</p>
 
